@@ -170,12 +170,17 @@ class Effect {
     this.canvas.height = height;
     this.width = width;
     this.height = height;
-    const gradient = this.context.createLinearGradient(0, 0, width, height);
-    gradient.addColorStop(0.1, "white");
-    gradient.addColorStop(0.5, "gold");
-    gradient.addColorStop(0.9, "orangered");
-    this.context.strokeStyle = "white";
-    this.context.fillStyle = gradient;
+    ctx.lineWidth = 3;
+    const gradient = ctx.createLinearGradient(0, 0, 0, canvas1.height);
+    gradient.addColorStop(0, "black");
+    gradient.addColorStop(0.5, "black");
+    gradient.addColorStop(0.5, "white");
+    gradient.addColorStop(1, "white");
+    ctx.fillStyle = "blue";
+    ctx.strokeStyle = "white";
+    ctx2.fillStyle = "blue";
+    ctx2.strokeStyle = "white";
+
     this.particles.forEach((particle) => {
       particle.reset();
     });

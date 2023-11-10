@@ -2,19 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
 }
 body {
   background-color: black;
-  user-select: none;
-  overflow: hidden;
 }
 .canvas2 {
   position: absolute;
   top: 0;
   left: 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
   background: linear-gradient(
     yellow 25%,
     red 25%,
@@ -25,4 +30,6 @@ body {
     Black 100%
   );
   filter: blur(15px) contrast(30);
+  max-width: 100%;
+  max-height: 100%;
 }
