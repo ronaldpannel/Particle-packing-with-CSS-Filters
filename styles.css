@@ -5,6 +5,8 @@
 }
 body {
   background-color: black;
+  user-select: none;
+  overflow: hidden;
 }
 .canvas2 {
   position: absolute;
