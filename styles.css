@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.canvas2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.canvas1 {
+  background: linear-gradient(
+    yellow 25%,
+    red 25%,
+    red 50%,
+    blue 50%,
+    blue 75%,
+    Black 75%,
+    Black 100%
+  );
+  filter: blur(15px) contrast(30);
+}
